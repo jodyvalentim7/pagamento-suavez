@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="pt-PT"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vídeo + Site Integrado</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: Inter, system-ui, Arial, sans-serif;
+      background: #f9fafc;
+      overflow-x: hidden;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    header {
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 3px solid #22c55e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      width: 95%;
+      max-width: 1200px;
+      margin: 0 auto;
+      border: 3px solid #22c55e;
+      border-top: none;
+      border-radius: 0 0 12px 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 93vh; /* altura do site abaixo do vídeo */
+      border: none;
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        width: 98%;
+      }
+      iframe {
+        height: 92vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Vídeo -->
+    <header>
+      <vturb-smartplayer id="vid-6907c8748d9e48ef8ac78a39" style="display: block; margin: 0 auto; width: 100%; max-width: 400px;"></vturb-smartplayer> 
+      <script type="text/javascript">
+        var s=document.createElement("script"); s.src="https://scripts.converteai.net/0ab22ab3-d839-402a-ad2d-4c04632f73a9/players/6907c8748d9e48ef8ac78a39/v4/player.js", s.async=!0,document.head.appendChild(s);
+      </script>
+    </header>
+
+    <!-- Site -->
+    <main>
+      <iframe src="https://cupon-pay.vercel.app/" title="Site incorporado" allow="clipboard-read; clipboard-write; fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-top-navigation" style="width:100%;height:93vh;border:none;display:block;" scrolling="yes">
+</iframe>
+
+    </main>
+
+  </div>
+
+
+
+</body></html>
